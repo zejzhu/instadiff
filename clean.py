@@ -36,3 +36,5 @@ if __name__ == "__main__":
     
     clean(sys.argv[1], '"title": ')
     clean(sys.argv[2], '"value": ')
+
+# TODO: add comparison step to python script, so long as it doesn't require package installs

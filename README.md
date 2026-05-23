@@ -78,5 +78,5 @@ The data will be in MYDATA/connections/followers_and_following. The only files w
 
 2. diff.txt now contains all usernames that you follow, but are not following you
 
-
-# Process
+# Constraints for usability
+I tried to avoid installing any packages/requiring any env management so this could be used with out-of-the-box python
