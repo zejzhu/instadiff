@@ -50,7 +50,7 @@ Don't worry if you've never used these! The instructions will show you exactly w
 ## 2. Clean data
 The data will be in MYDATA/connections/followers_and_following. The only files we care about are "followers_1.json" and "following.json"
 
-1. Download "clean.py" from this github repository
+1. Download "clean.py" from this github repository (should be listed at the top of this page)
 
     clean.py is a python script that puts the two lists into a format that can be compared with each other
 
