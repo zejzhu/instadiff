@@ -75,8 +75,16 @@ The data will be in MYDATA/connections/followers_and_following. The only files w
 
 2. diff.txt now contains all usernames that you follow, but are not following you
 
-# Constraints for usability
+# Notes
+### What can break this process
+Instagram consistently changes their data formats and data export steps, which might mean this script needs to be updated.
+
+Also, some extra usernames may appear in the list due to people changing their usernames or deleting their accounts.
+
+### Constraints for usability
 This process is not the most technically elegant, as it's meant to be as un-daunting as possible for non-technical users. :p
 
-I tried to avoid installing any packages/requiring any env management so this could be used with out-of-the-box python.
+I avoided requiring installing any packages/requiring any env management so this could be used with out-of-the-box python.
+
+
 
