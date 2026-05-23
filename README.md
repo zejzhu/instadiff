@@ -5,9 +5,6 @@ Makes a list of Instagram users you are following that don't follow you back.
 
 Basically, we're just getting the lists of your followers and following, cleaning the lists with python, and comparing the lists with computer commands.
 
-#### Notes
-This process is not the most technically elegant, as it's meant to be as un-daunting as possible for non-technical users. :p
-
 # Instructions
 
 ### Make sure you have the following:
@@ -65,7 +62,7 @@ The data will be in MYDATA/connections/followers_and_following. The only files w
 
     windows: right click inside the folder in Windows Explorer, click "Show more options", and click "Open Git Bash here"
 
-    <img src="assets/showmoreoptions.png" height="150"> <img src="assets/opengitbash.png" height="150">
+    <img src="assets/showmoreoptions.png" height="200"> <img src="assets/opengitbash.png" height="200">
 
 4. Type ```python clean.py following.json followers_1.json``` and hit enter (You can also copy and paste into bash)
 
@@ -79,4 +76,7 @@ The data will be in MYDATA/connections/followers_and_following. The only files w
 2. diff.txt now contains all usernames that you follow, but are not following you
 
 # Constraints for usability
-I tried to avoid installing any packages/requiring any env management so this could be used with out-of-the-box python
+This process is not the most technically elegant, as it's meant to be as un-daunting as possible for non-technical users. :p
+
+I tried to avoid installing any packages/requiring any env management so this could be used with out-of-the-box python.
+
