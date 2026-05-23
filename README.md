@@ -14,6 +14,8 @@ This process is not the most technically elegant, as it's meant to be as un-daun
 
 python <a href="https://www.python.org/downloads/">(Python Download)</a>
 
+- add python to PATH when the option appears
+
 bash (comes pre-installed on MacOS) <a href="https://gitforwindows.org/">(Git for Windows, which includes Git Bash)</a>
 
 Don't worry if you've never used these! The instructions will show you exactly what you need to do.
@@ -59,17 +61,22 @@ The data will be in MYDATA/connections/followers_and_following. The only files w
 
 3. Open bash in MYDATA/connections/followers_and_following
 
-    mac: <a href="https://medium.com/@walecloud/add-open-in-terminal-option-for-finder-mac-os-d5ea2b0cde6a">Open Terminal app in this folder</a>, then type *bash* and hit enter
+    mac: <a href="https://medium.com/@walecloud/add-open-in-terminal-option-for-finder-mac-os-d5ea2b0cde6a">Open Terminal app in this folder</a>, then type ```bash``` and hit enter
 
     windows: right click inside the folder in Windows Explorer, click "Show more options", and click "Open Git Bash here"
 
     <img src="assets/showmoreoptions.png" height="150"> <img src="assets/opengitbash.png" height="150">
 
-4. Type *python clean.py followers_1.json following.json* and hit enter
+4. Type ```python clean.py following.json followers_1.json``` and hit enter (You can also copy and paste into bash)
 
-    This will create two new files: "sortedfollowers.json" and "sortedfollowing.json"
+5. If it gives a success message for both files, you are ready to continue
 
 
 ## 3. Compare lists
 
-# clean.py
+1. type ```comm -23 following.json followers_1.json > diff.txt``` and hit enter
+
+2. diff.txt now contains all usernames that you follow, but are not following you
+
+
+# Process
