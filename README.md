@@ -1,9 +1,7 @@
 Tutorial for my friends :>
 
 ## Overview
-Makes a list of Instagram users you are following that don't follow you back.
-
-Basically, we're just getting the lists of your followers and following, and then cleaning + comparing the lists with python.
+Export your Instagram data and process it using python to create a list of Instagram users you are following that don't follow you back.
 
 # Instructions
 
@@ -48,7 +46,7 @@ The data will be in MYDATA/connections/followers_and_following. The only files w
 
 1. Download "clean.py" from this github repository (should be listed at the top of this page)
 
-    clean.py is a python script that puts the two lists into a format that can be compared with each other
+    - clean.py is a python script that puts the two lists into a format that can be compared with each other
 
 2. Move **clean.py** to MYDATA/connections/followers_and_following
 
@@ -58,7 +56,7 @@ The data will be in MYDATA/connections/followers_and_following. The only files w
 
     - windows: right click inside the folder in Windows Explorer, click "Open in Terminal"
 
-4. Type ```python clean.py following.json followers_1.json``` and hit enter (You can also copy and paste into bash)
+4. Type ```python clean.py following.json followers_1.json``` and hit enter (You can also copy and paste)
 
 5. Diff.json should now contain all users that you follow but don't follow you back.
 
