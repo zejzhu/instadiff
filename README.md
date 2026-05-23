@@ -3,19 +3,15 @@ Tutorial for my friends :>
 ## Overview
 Makes a list of Instagram users you are following that don't follow you back.
 
-Basically, we're just getting the lists of your followers and following, cleaning the lists with python, and comparing the lists with computer commands.
+Basically, we're just getting the lists of your followers and following, and then cleaning + comparing the lists with python.
 
 # Instructions
 
-### Make sure you have the following:
+### Make sure you have python installed:
 
 python <a href="https://www.python.org/downloads/">(Python Download)</a>
 
 - add python to PATH when the option appears
-
-bash (comes pre-installed on MacOS) <a href="https://gitforwindows.org/">(Git for Windows, which includes Git Bash)</a>
-
-Don't worry if you've never used these! The instructions will show you exactly what you need to do.
 
 ## 1. Get Instagram data
 ### Begin Export
@@ -47,33 +43,25 @@ Don't worry if you've never used these! The instructions will show you exactly w
 3. Unzip the folder that you just downloaded (We'll call this folder MYDATA)
 
 
-## 2. Clean data
-The data will be in MYDATA/connections/followers_and_following. The only files we care about are "followers_1.json" and "following.json"
+## 2. Clean and compare the data
+The data will be in MYDATA/connections/followers_and_following. The only files we care about are **following.json** and **followers_1.json**
 
-1. Download "clean.py" from this github repository
+1. Download **clean.py** from this github repository
 
     clean.py is a python script that puts the two lists into a format that can be compared with each other
 
-2. Move "clean.py" to MYDATA/connections/followers_and_following
+2. Move **clean.py** to MYDATA/connections/followers_and_following
 
-3. Open bash in MYDATA/connections/followers_and_following
+3. Open terminal in this folder (or python interpreter of your choice)
 
-    mac: <a href="https://medium.com/@walecloud/add-open-in-terminal-option-for-finder-mac-os-d5ea2b0cde6a">Open Terminal app in this folder</a>, then type ```bash``` and hit enter
+    - mac: right click inside the folder in Finder, click Services > New Terminal at folder. If that doesn't work try this: <a href="https://medium.com/@walecloud/add-open-in-terminal-option-for-finder-mac-os-d5ea2b0cde6a">Open Terminal app in this folder</a>
 
-    windows: right click inside the folder in Windows Explorer, click "Show more options", and click "Open Git Bash here"
-
-    <img src="assets/showmoreoptions.png" height="200"> <img src="assets/opengitbash.png" height="200">
+    - windows: right click inside the folder in Windows Explorer, click "Open in Terminal"
 
 4. Type ```python clean.py following.json followers_1.json``` and hit enter (You can also copy and paste into bash)
 
-5. If it gives a success message for both files, you are ready to continue
+5. Diff.json should now contain all users that you follow but don't follow you back.
 
-
-## 3. Compare lists
-
-1. type ```comm -23 following.json followers_1.json > diff.txt``` and hit enter
-
-2. diff.txt now contains all usernames that you follow, but are not following you
 
 # Notes
 ### What can break this process
